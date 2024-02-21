@@ -1,0 +1,17 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 6rem;
+  min-height: 100vh;
+  text-align: center;
+  background: #FEECE2;
+  background: linear-gradient(135deg, #FEECE2, #AEC2B6);
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
