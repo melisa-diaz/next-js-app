@@ -1,13 +1,7 @@
-import { Html, Head, Main, NextScript } from "next/document";
+import { Document } from '@tkww/orion-web-nextjs-pages-router/server';
 
-export default function Document() {
-  return (
-    <Html lang="en">
-      <Head />
-      <body>
-        <Main />
-        <NextScript />
-      </body>
-    </Html>
-  );
-}
+const ThisDocument = () => {
+  return <Document analytics={false} />;
+};
+
+export default ThisDocument;
