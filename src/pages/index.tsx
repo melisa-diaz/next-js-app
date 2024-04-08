@@ -1,10 +1,7 @@
 import Head from "next/head"
-import { Inter } from "next/font/google"
 import Link from 'next/link'
-// import { CtaButton } from "@tkww/orion-web-ds-action"
+import { CtaButton } from "@tkww/orion-web-ds-action"
 import styles from "@/styles/Home.module.css"
-
-const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   return (
@@ -15,10 +12,10 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className={`${styles.main} ${inter.className}`}>
+      <main className={styles.main}>
         <section className={styles.content}>
           <h1>Hello there :)</h1>
-          <Link href="/mel">Go to my page</Link>
+          <CtaButton as={Link} treatAs="link" color="primary" href="/mel">Go to Mel&apos;s page</CtaButton>
         </section>
       </main>
     </>
