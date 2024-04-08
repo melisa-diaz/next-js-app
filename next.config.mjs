@@ -1,6 +1,7 @@
+import { withOrionWebPages } from '@tkww/orion-web-nextjs-pages-router/server';
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  reactStrictMode: true,
-};
+reactStrictMode: true,
+}
 
-export default nextConfig;
+export default withOrionWebPages(nextConfig);
